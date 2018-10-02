@@ -86,14 +86,21 @@ class FunctionsTest < MiniTest::Test
   end
 
   #Given the radius of a sphere calculate the volume
+  # V == 4/3 π r3
+  # PI in Ruby Math module = 3.141592653589793
+  # So manually, (4/3) * 3.141592653589793 * 3**3 == 113.097335529232548
+  # The function in ruby_functions_practice returns 113.09733552923254, maybe it cannot calculate this precisely
+  # Taken the option of rounding the answer to the function to 5dp
+  # which comes to, (for radius 3), 113.09734
   def test_volume_of_sphere()
     sphere_volume = volume_of_sphere(3)
-    assert_equal(113, sphere_volume)
+    assert_equal(113.09734, sphere_volume)
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-    #add test code here
+    celsius_temp = fahrenheit_to_celsius(20)
+    assert_equal(x, celsius_temp)
   end
 
 

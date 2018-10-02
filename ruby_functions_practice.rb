@@ -1,6 +1,8 @@
 # ruby
 #ruby_functions_spec.rb
 #Example
+include Math
+
 def return_10()
   return 10
 end
@@ -98,8 +100,11 @@ def volume_of_cube(side_length)
 end
 
 def volume_of_sphere(radius)
-  pi = 3.141592653
-  radius_cubed = radius ** 3
-  four_thirds = 4/3
-  return four_thirds * pi * radius_cubed
+  four_thirds = Rational(4,3)
+  exact_answer = four_thirds * PI * radius**3
+  return exact_answer.round(5)
 end
+
+p volume_of_sphere(3)
+
+p PI
