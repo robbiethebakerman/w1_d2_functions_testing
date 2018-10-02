@@ -100,13 +100,14 @@ def volume_of_cube(side_length)
 end
 
 def volume_of_sphere(radius)
-  four_thirds = Rational(4,3)
-  exact_answer = four_thirds * PI * radius**3
+#  four_thirds = Rational(4,3)
+#  exact_answer = four_thirds * PI * radius**3
+  exact_answer = PI * radius**3 * 4 / 3
   return exact_answer.round(5)
 end
 
 def fahrenheit_to_celsius(temp_in_celsius)
-  five_ninths = Rational(5,9)
+#  five_ninths = Rational(5,9)
   return (temp_in_celsius-32) * 5 / 9
 end
 
