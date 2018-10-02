@@ -105,6 +105,9 @@ def volume_of_sphere(radius)
   return exact_answer.round(5)
 end
 
-p volume_of_sphere(3)
+def fahrenheit_to_celsius(temp_in_celsius)
+  five_ninths = Rational(5,9)
+  return (temp_in_celsius-32) * 5 / 9
+end
 
-p PI
+#p fahrenheit_to_celsius(5)

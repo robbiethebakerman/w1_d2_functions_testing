@@ -98,9 +98,10 @@ class FunctionsTest < MiniTest::Test
   end
 
   #Given a value in farenheit, convert this into celsius.
+  # 5 fahrenheit is -15C exactly! Use this
   def test_fahrenheit_to_celsius()
-    celsius_temp = fahrenheit_to_celsius(20)
-    assert_equal(x, celsius_temp)
+    celsius_temp = fahrenheit_to_celsius(5)
+    assert_equal(-15, celsius_temp)
   end
 
 
