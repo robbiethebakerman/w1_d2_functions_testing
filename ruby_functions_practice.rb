@@ -37,41 +37,59 @@ def number_to_full_month_name(month_number)
   if month_number == 1
     "January"
   elsif month_number == 2
-   "February"
- elsif month_number == 3
-   "March"
- elsif month_number == 4
-   "April"
- elsif month_number == 5
-   "May"
- elsif month_number == 6
-   "June"
- elsif month_number == 7
-   "July"
- elsif month_number == 8
-   "August"
- elsif month_number == 9
-   "September"
- elsif month_number == 10
-   "October"
- elsif month_number == 11
-   "November"
- elsif month_number == 12
-   "December"
+    "February"
+  elsif month_number == 3
+    "March"
+  elsif month_number == 4
+    "April"
+  elsif month_number == 5
+    "May"
+  elsif month_number == 6
+    "June"
+  elsif month_number == 7
+    "July"
+  elsif month_number == 8
+    "August"
+  elsif month_number == 9
+    "September"
+  elsif month_number == 10
+    "October"
+  elsif month_number == 11
+    "November"
+  elsif month_number == 12
+    "December"
   else
-    "error"
+    "Error, needs a whole number between 1 and 12"
   end
 end
 
 def number_to_short_month_name(month_number)
   if month_number == 1
-    p "Jan"
+    "Jan"
+  elsif month_number == 2
+    "Feb"
+  elsif month_number == 3
+    "Mar"
   elsif month_number == 4
-    p "Apr"
+    "Apr"
+  elsif month_number == 5
+    "May"
+  elsif month_number == 6
+    "Jun"
+  elsif month_number == 7
+    "Jul"
+  elsif month_number == 8
+    "Aug"
+  elsif month_number == 9
+    "Sep"
   elsif month_number == 10
-    p "Oct"
+    "Oct"
+  elsif month_number == 11
+    "Nov"
+  elsif month_number == 12
+    "Dec"
   else
-    p "Error"
+    "Error, needs a whole number between 1 and 12"
   end
 end
 
